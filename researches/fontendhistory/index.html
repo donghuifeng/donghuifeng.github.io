@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+<title>前端发展历史 | Donghuifeng</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/programs">Program</a>
+                
+                    <a class="menu-item" href="/researches">Research</a>
+                
+                    <a class="menu-item" href="/categories">Category</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Donghuifeng&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Blog</a>
+                
+                    <a class="menu-item" href="/programs">Program</a>
+                
+                    <a class="menu-item" href="/researches">Research</a>
+                
+                    <a class="menu-item" href="/categories">Category</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">前端发展历史</h2>
+        
+        <section class="post-content">
+            <h2 id="什么是前端"><a href="#什么是前端" class="headerlink" title="什么是前端"></a>什么是前端</h2><blockquote>
+<p>前端和后端是是用来描述程序进程开始和结束，其中前端作用于采集输入并显示信息，后端负责进行信息处理。</p>
+<p>——维基百科</p>
+</blockquote>
+<p>根据维基百科定义，前端其实是包含了所有与用户交互的内容，包括Web、PCApp、MobileApp等交互渠道。</p>
+<h2 id="蒂姆·伯纳斯·李的第一行代码"><a href="#蒂姆·伯纳斯·李的第一行代码" class="headerlink" title="蒂姆·伯纳斯·李的第一行代码"></a>蒂姆·伯纳斯·李的第一行代码</h2><h3 id="1-第一张网页"><a href="#1-第一张网页" class="headerlink" title="1 第一张网页"></a>1 第一张网页</h3><p>1989年，在瑞士日内瓦西部接壤法国的边境，坐落一家研究机构——欧洲核子研究中心（CERN），其中IT部门有一名英国科学家叫蒂姆·伯纳斯·李（Tim Berners Lee）为了更好的满足全世界科学家之间分享信息和文献，向领导提交了一项叫“Information Management: A Proposal”的建议书，即后来的万维网（World Wide Web），并设计了世界上第一个网站（ <a href="http://info.cern.ch/" target="_blank" rel="noopener">http://info.cern.ch/</a> ）和第一个网页（ <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank" rel="noopener">http://info.cern.ch/hypertext/WWW/TheProject.html</a> ）</p>
+<h3 id="2-第一台服务器"><a href="#2-第一台服务器" class="headerlink" title="2 第一台服务器"></a>2 第一台服务器</h3><p>1989年3月份，蒂姆·伯纳斯·李撰写<a href="http://cds.cern.ch/record/369245/files/dd-89-001.pdf" target="_blank" rel="noopener">第一份万维网提案</a>，并在次年5月修改提出第二份万维网提案。在1990年11月，和工程师罗伯特·卡里奥（Robert Cailliau）一起完成了<a href="http://cds.cern.ch/record/2639699/files/Proposal_Nov-1990.pdf" target="_blank" rel="noopener">管理提案</a>，该提案描述了一个名为“WorldWideWeb”的“超文本项目”，概述了主要概念，并定义了Web背后的重要术语。1990年的12月25日，正是西方圣诞节的那天，蒂姆·伯纳斯·李在CERN利用NeXT计算机（由苹果公司的创办人史蒂夫·保罗·乔布斯于1985年被苹果公司辞退后同年成立）搭建了全世界第一台服务器，并在机箱贴上“<strong><font color="red">这台机器是一台服务器。请不要关机！</font></strong>”，这是全世界第一套“主机-网站-浏览器”的Web系统，采用HTML语言完成，<strong>标志着前端工程的开始</strong>。<br><img src="https://upload-images.jianshu.io/upload_images/13080407-ad60429741366b91.png" alt></p>
+<h2 id="现代Web技术的元年"><a href="#现代Web技术的元年" class="headerlink" title="现代Web技术的元年"></a>现代Web技术的元年</h2><h3 id="1-建立官方机构"><a href="#1-建立官方机构" class="headerlink" title="1 建立官方机构"></a>1 建立官方机构</h3><p>在蒂姆·伯纳斯·李发布完第一张网页后的三年时间里，万维网技术在继续缓慢中发展，1994年5月<strong>第一届WWW大会</strong>在瑞士日内瓦召开，同年7月，HTML2.0版本发布。接着，蒂姆·伯纳斯·李前往麻省理工学院创立国际万维网联盟（World Wide Web Consortium），简称W3C。这标志着万维网进入了标准化发展的阶段。</p>
+<h2 id="2-HTML诞生"><a href="#2-HTML诞生" class="headerlink" title="2 HTML诞生"></a>2 HTML诞生</h2><h2 id="3-浏览器发布"><a href="#3-浏览器发布" class="headerlink" title="3 浏览器发布"></a>3 浏览器发布</h2><p>1993年4月22日，美国伊利诺伊大学厄巴纳香槟分校的美国国家超算应用中心（National Center for Supercomputer Applications）开发并发布了全世界第一款浏览器Mosaic，现在仍然可以<a href="ftp://ftp.ncsa.uiuc.edu/Mosaic/" target="_blank" rel="noopener">下载</a>。1994年11月，网景公司（Netscape）雇佣了很多 Mosaic 开发者，发布了鼎鼎大名的Navigator浏览器。1995年，微软从 Mosaic 获得授权开发了 Internet Explorer。<br><img src="https://upload-images.jianshu.io/upload_images/13080407-086f1020fe9d0d22.png" alt></p>
+<h2 id="4-CSS出现"><a href="#4-CSS出现" class="headerlink" title="4 CSS出现"></a>4 CSS出现</h2><p>随着万维网技术的应用越来越普及，不同的浏览器使用各自的HTML语法结构来支持实现不同的样式语言，HTML 增加了很多功能，代码也越来越臃肿，网页失去了语义化，维护代码很艰难。1994年，蒂姆·伯纳斯·李与哈坤·利提出了CSS的最初建议，与伯特·波斯（Bert Bos）一起合作设计CSS，由w3c组织进行编写，到1996年底，CSS初稿已经完成，1996年12月，层叠样式表的第一份正式标准（Cascading style Sheets Level 1）完成，成为w3c的推荐标准。</p>
+
+        </section>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Copyright 2019</span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
