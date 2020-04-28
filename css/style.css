@@ -746,7 +746,7 @@ header label {
   padding-bottom: 0.3em;
 }
 .post-content h1::before {
-  content: "#";
+  content: "";
   margin-right: 5px;
   color: #2d96bd;
 }
@@ -754,7 +754,7 @@ header label {
   color: #eee;
 }
 .post-content h2::before {
-  content: "#";
+  content: "";
   margin-right: 5px;
   color: #2d96bd;
 }
@@ -762,7 +762,7 @@ header label {
   color: #eee;
 }
 .post-content h3::before {
-  content: "|";
+  content: "";
   margin-right: 5px;
   color: #2d96bd;
 }
@@ -770,7 +770,7 @@ header label {
   color: #eee;
 }
 .post-content h4::before {
-  content: "*";
+  content: "";
   margin-right: 5px;
   color: #2d96bd;
 }
@@ -867,7 +867,7 @@ header label {
   line-height: 1.7;
 }
 .post-content img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -948,8 +948,8 @@ header label {
   line-height: 1.7em;
   padding: 3px 5px;
   border-radius: 4px;
-  color: #c7254e;
-  background: #f8f5ec;
+  color: $light-code-font-color;
+  background: #f8f8f8;
 }
 .dark-theme .post-content code {
   color: #fffe28;
@@ -1247,30 +1247,42 @@ header label {
 }
 .highlight {
   color: #00193a;
-  background: #eaeef3;
+  background: #f8f8f8;
+}
+.highlight .code .name {
+  color: #170;
+}
+.highlight .code .tag {
+  color: #0508cd;
+}
+.highlight .code .string {
+  color: #aa1012;
+}
+.highlight .code .selector-tag {
+  color: #170;
+}
+.highlight .code .attribute {
+  color: #000;
+}
+.highlight .code .number {
+  color: #170;
 }
 .highlight .code .keyword,
-.highlight .code .selector-tag,
 .highlight .code .title,
 .highlight .code .section,
 .highlight .code .doctag,
-.highlight .code .name,
 .highlight .code .strong {
   font-weight: bold;
 }
 .highlight .code .comment {
   color: #738191;
 }
-.highlight .code .string,
 .highlight .code .title,
 .highlight .code .section,
 .highlight .code .built_in,
 .highlight .code .literal,
 .highlight .code .type,
-.highlight .code .addition,
-.highlight .code .tag,
 .highlight .code .quote,
-.highlight .code .name,
 .highlight .code .selector-id,
 .highlight .code .selector-class {
   color: #0048ab;
@@ -1279,7 +1291,7 @@ header label {
 .highlight .code .subst,
 .highlight .code .symbol,
 .highlight .code .regexp,
-.highlight .code .attribute,
+.highlight .code .addition,
 .highlight .code .deletion,
 .highlight .code .variable,
 .highlight .code .template-variable,

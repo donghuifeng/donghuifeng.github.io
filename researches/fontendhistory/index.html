@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
@@ -38,7 +39,7 @@
     
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 <body>
     <div class="wrapper">
         <header>
@@ -47,13 +48,13 @@
             <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Blog</a></div>
             <div class="menu navbar-right">
                 
-                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng">Blog</a>
+                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
                 
-                    <a class="menu-item" href="/programs">Program</a>
+                    <a class="menu-item" href="/programs">Programs</a>
                 
-                    <a class="menu-item" href="/researches">Research</a>
+                    <a class="menu-item" href="/researches">Researches</a>
                 
-                    <a class="menu-item" href="/technologies">Technology</a>
+                    <a class="menu-item" href="/technologies">Technologies</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -75,13 +76,13 @@
             </div>
             <div class="menu" id="mobile-menu">
                 
-                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng">Blog</a>
+                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
                 
-                    <a class="menu-item" href="/programs">Program</a>
+                    <a class="menu-item" href="/programs">Programs</a>
                 
-                    <a class="menu-item" href="/researches">Research</a>
+                    <a class="menu-item" href="/researches">Researches</a>
                 
-                    <a class="menu-item" href="/technologies">Technology</a>
+                    <a class="menu-item" href="/technologies">Technologies</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -110,86 +111,135 @@
         <h2 class="post-title">前端发展历史</h2>
         
         <section class="post-content">
-            <h2 id="什么是前端"><a href="#什么是前端" class="headerlink" title="什么是前端"></a>什么是前端</h2><blockquote>
+            <!-- toc -->
+
+<ul>
+<li><a href="#什么是前端">什么是前端</a></li>
+<li><a href="#蒂姆伯纳斯李的创世纪">蒂姆·伯纳斯·李的创世纪</a><ul>
+<li><a href="#1-第一张网页">1 第一张网页</a></li>
+<li><a href="#2-第一台服务器">2 第一台服务器</a></li>
+</ul>
+</li>
+<li><a href="#现代web技术的元年">现代Web技术的元年</a><ul>
+<li><a href="#1-建立官方机构">1 建立官方机构</a></li>
+<li><a href="#2-html诞生">2 HTML诞生</a></li>
+<li><a href="#3-浏览器发布">3 浏览器发布</a></li>
+<li><a href="#4-css出现">4 CSS出现</a></li>
+<li><a href="#5-动态加载页面技术">5 动态加载页面技术</a></li>
+</ul>
+</li>
+<li><a href="#动态交互时代">动态交互时代</a><ul>
+<li><a href="#1-javascript现世">1 JavaScript现世</a></li>
+<li><a href="#2-第一次浏览器世界大战">2 第一次浏览器世界大战</a></li>
+<li><a href="#3-标准化之路">3 标准化之路</a></li>
+<li><a href="#4-ajax开启新时代">4 Ajax开启新时代</a></li>
+<li><a href="#5-第二次浏览器世界大战">5 第二次浏览器世界大战</a></li>
+<li><a href="#6-jquery前端兼容性框架">6 jQuery前端兼容性框架</a></li>
+<li><a href="#7-html5出现">7 HTML5出现</a></li>
+<li><a href="#8-v8引擎">8 V8引擎</a></li>
+<li><a href="#6-nodejs">6 Node.js</a></li>
+<li><a href="#7-前端mv框架">7 前端MV*框架</a></li>
+<li><a href="#8-spa时代">8 SPA时代</a></li>
+</ul>
+</li>
+<li><a href="#移动前端时代">移动前端时代</a><ul>
+<li><a href="#1-移动web">1 移动Web</a></li>
+<li><a href="#2-hybrid-app技术">2 Hybrid App技术</a></li>
+</ul>
+</li>
+<li><a href="#全能前端系统">全能前端系统</a></li>
+</ul>
+<!-- tocstop -->
+
+<h2><span id="什么是前端">什么是前端</span></h2><blockquote>
 <p>前端和后端是是用来描述程序进程开始和结束，其中前端作用于采集输入并显示信息，后端负责进行信息处理。</p>
 <p>​                                                                                                                                                                                 ——维基百科</p>
 </blockquote>
 <p>在介绍一件事或一个人的历史之前，需要明确对象本身的定义，界定具体的范围。根据维基百科定义，前端其实是包含了所有与用户交互的内容，包括Web、PCApp、MobileApp等交互渠道。所以，本文主要介绍这些领域内的历史。</p>
-<h2 id="蒂姆·伯纳斯·李的创世纪"><a href="#蒂姆·伯纳斯·李的创世纪" class="headerlink" title="蒂姆·伯纳斯·李的创世纪"></a>蒂姆·伯纳斯·李的创世纪</h2><h3 id="1-第一张网页"><a href="#1-第一张网页" class="headerlink" title="1 第一张网页"></a>1 第一张网页</h3><p style="text-align:justify;text-justify:inter-ideograph;">1989年，在瑞士日内瓦西部接壤法国的边境，坐落一家研究机构——欧洲核子研究中心（CERN），其中IT部门有一名英国科学家叫蒂姆·伯纳斯·李（Tim Berners Lee）为了更好的满足全世界科学家之间分享信息和文献，向领导提交了一项叫“Information Management: A Proposal”的建议书，即后来的万维网（World Wide Web），并设计了世界上第一个网站（ http://info.cern.ch/ ）和第一个网页（ http://info.cern.ch/hypertext/WWW/TheProject.html ）</p>
+<h2><span id="蒂姆伯纳斯李的创世纪">蒂姆·伯纳斯·李的创世纪</span></h2><h3><span id="1-第一张网页">1 第一张网页</span></h3><p style="text-align:justify;text-justify:inter-ideograph;">1989年，在瑞士日内瓦西部接壤法国的边境，坐落一家研究机构——欧洲核子研究中心（CERN），其中IT部门有一名英国科学家叫蒂姆·伯纳斯·李（Tim Berners Lee）为了更好的满足全世界科学家之间分享信息和文献，向领导提交了一项叫“Information Management: A Proposal”的建议书，即后来的万维网（World Wide Web），并设计了世界上第一个网站（ http://info.cern.ch/ ）和第一个网页（ http://info.cern.ch/hypertext/WWW/TheProject.html ）</p>
 
+<div style="text-align:center;">
 <img src="https://note.youdao.com/yws/api/personal/file/WEB62420c19ecea4537d84f60c7bb421727?method=download&shareKey=ffec77b21f1b323ac3d77272a5caebcb" width="80%" height="60%">
+</div>
 
 <center>图 1 全世界第一个网页（图片来源于http://info.cern.ch/hypertext/WWW/TheProject.html）</center>
 
 
-<h3 id="2-第一台服务器"><a href="#2-第一台服务器" class="headerlink" title="2 第一台服务器"></a>2 第一台服务器</h3><p style="text-align:justify;text-justify:inter-ideograph;">1989年3月份，蒂姆·伯纳斯·李撰写[第一份万维网提案](http://cds.cern.ch/record/369245/files/dd-89-001.pdf)，并在次年5月修改提出第二份万维网提案。在1990年11月，和工程师罗伯特·卡里奥（Robert Cailliau）一起完成了[管理提案](http://cds.cern.ch/record/2639699/files/Proposal_Nov-1990.pdf)，该提案描述了一个名为“WorldWideWeb”的“超文本项目”，概述了主要概念，并定义了Web背后的重要术语。1990年的12月25日，正是西方圣诞节的那天，蒂姆·伯纳斯·李在CERN利用NeXT计算机（由苹果公司的创办人史蒂夫·保罗·乔布斯于1985年被苹果公司辞退后同年成立）搭建了全世界第一台服务器，并在机箱贴上“<font color="red">这台机器是一台服务器。请不要关机！</font>”，这是全世界第一套“主机-网站-浏览器”的Web系统，采用HTML语言完成，**标志着前端工程的开始**。</p>
-
+<h3><span id="2-第一台服务器">2 第一台服务器</span></h3><p style="text-align:justify;text-justify:inter-ideograph;">1989年3月份，蒂姆·伯纳斯·李撰写[第一份万维网提案](http://cds.cern.ch/record/369245/files/dd-89-001.pdf)，并在次年5月修改提出第二份万维网提案。在1990年11月，和工程师罗伯特·卡里奥（Robert Cailliau）一起完成了[管理提案](http://cds.cern.ch/record/2639699/files/Proposal_Nov-1990.pdf)，该提案描述了一个名为“WorldWideWeb”的“超文本项目”，概述了主要概念，并定义了Web背后的重要术语。1990年的12月25日，正是西方圣诞节的那天，蒂姆·伯纳斯·李在CERN利用NeXT计算机（由苹果公司的创办人史蒂夫·保罗·乔布斯于1985年被苹果公司辞退后同年成立）搭建了全世界第一台服务器，并在机箱贴上“<font color="red">这台机器是一台服务器。请不要关机！</font>”，这是全世界第一套“主机-网站-浏览器”的Web系统，采用HTML语言完成，**标志着前端工程的开始**。</p>
+<div style="text-align:center;">
 <img src="https://note.youdao.com/yws/api/personal/file/WEB5c615dae72588d6c2613e4441cd0fe88?method=download&shareKey=9b7804fa64cb59de957e507fe326e92f" width="80%" height="50%">
+</div>
 <center>图 2 全世界第一台网络服务器（图片来源于）</center>
 
 <p>服务器发展历史详情</p>
-<h2 id="现代Web技术的元年"><a href="#现代Web技术的元年" class="headerlink" title="现代Web技术的元年"></a>现代Web技术的元年</h2><h3 id="1-建立官方机构"><a href="#1-建立官方机构" class="headerlink" title="1 建立官方机构"></a>1 建立官方机构</h3><p>在蒂姆·伯纳斯·李发布完第一张网页后的三年时间里，万维网技术在继续缓慢中发展，1994年5月<strong>第一届WWW大会</strong>在瑞士日内瓦召开，同年7月，HTML2.0版本发布。接着，蒂姆·伯纳斯·李前往麻省理工学院创立国际万维网联盟（World Wide Web Consortium），简称W3C。这标志着万维网进入了标准化发展的阶段。</p>
-<h3 id="2-HTML诞生"><a href="#2-HTML诞生" class="headerlink" title="2 HTML诞生"></a>2 HTML诞生</h3><p>HTML的首个公开描述出现于一个名为“HTML标签”的文件中，由蒂姆·伯纳斯-李于1991年底提及。它描述18个元素，包括HTML初始的、相对简单的设计，其设计都深受CERN内部一个以标准通用标记语言（SGML）为基础的文件格式SGMLguid的影响。</p>
+<h2><span id="现代web技术的元年">现代Web技术的元年</span></h2><h3><span id="1-建立官方机构">1 建立官方机构</span></h3><p>在蒂姆·伯纳斯·李发布完第一张网页后的三年时间里，万维网技术在继续缓慢中发展，1994年5月<strong>第一届WWW大会</strong>在瑞士日内瓦召开，同年7月，HTML2.0版本发布。接着，蒂姆·伯纳斯·李前往麻省理工学院创立国际万维网联盟（World Wide Web Consortium），简称W3C。这标志着万维网进入了标准化发展的阶段。</p>
+<h3><span id="2-html诞生">2 HTML诞生</span></h3><p>HTML的首个公开描述出现于一个名为“HTML标签”的文件中，由蒂姆·伯纳斯-李于1991年底提及。它描述18个元素，包括HTML初始的、相对简单的设计，其设计都深受CERN内部一个以标准通用标记语言（SGML）为基础的文件格式SGMLguid的影响。</p>
 <p>伯纳斯-李认为HTML是SGML的一个应用程序。1993年中期互联网工程任务组（IETF）发布首个HTML规范的提案：“超文本标记语言（HTML）”互联网草案，由伯纳斯-李与丹·康纳利撰写。草案于6个月后过期，不过值得注意的是其对NCSA Mosaic浏览器自定义标签从而将在线图像嵌入的行为的认可，这反映IETF把标准立足于成功原型的理念。同样，戴夫·拉格特在1993年末提出的与之竞争的互联网草案“HTML+（超文本标记格式）”</p>
 <p>在HTML和HTML+的草案于1994年初到期后，IETF创建一个HTML工作组，并在1995年完成”HTML 2.0”，这是第一个旨在成为对其后续实现标准的依据的HTML规范。</p>
 <p>在IETF的主持下，HTML标准的进一步发展因竞争利益而遭受停滞。自1996年起，HTML规范一直由万维网联盟（W3C）维护，并由商业软件厂商出资。不过在2000年，HTML也成为国际标准（ISO/ IEC15445：2000）。HTML 4.01于1999年末发布，进一步的勘误版本于2001年发布。2004年，网页超文本应用技术工作小组（WHATWG）开始开发HTML5，并在2008年与W3C共同交付，2014年10月28日完成标准化。</p>
 <p><a href>HTML发展历史详情</a></p>
-<h3 id="3-浏览器发布"><a href="#3-浏览器发布" class="headerlink" title="3 浏览器发布"></a>3 浏览器发布</h3><p>1993年4月22日，美国伊利诺伊大学厄巴纳香槟分校的美国国家超算应用中心（National Center for Supercomputer Applications）开发并发布了全世界第一款浏览器Mosaic，现在仍然可以<a href="ftp://ftp.ncsa.uiuc.edu/Mosaic/" target="_blank" rel="noopener">下载</a>。1994年11月，网景公司（Netscape）雇佣了很多 Mosaic 开发者，发布了鼎鼎大名的Navigator浏览器。1995年，微软从 Mosaic 获得授权开发了 Internet Explorer。</p>
+<h3><span id="3-浏览器发布">3 浏览器发布</span></h3><p>1993年，马克·安德森和Silicon Graphics公司创始人吉姆·克拉克在美国加州设立了后来”Mosaic Commucation Corporation“，同年4月22日，美国伊利诺伊大学厄巴纳香槟分校的美国国家超算应用中心（National Center for Supercomputer Applications）开发并发布了全世界第一款浏览器Mosaic，现在仍然可以<a href="ftp://ftp.ncsa.uiuc.edu/Mosaic/">下载</a>。但是美国伊利诺伊大学拥有Mosaic的商标权，且已将技术卖给了Spy Glass公司。于是Mosaic Commucation Corporation的开发人员彻底重写了浏览器代码，且将公司名字改为”Netscape Commucation Corporation“，浏览器名字改为”Netscape Navigator“。1994年11月，网景公司（Netscape）发布了鼎鼎大名的Navigator浏览器。随后，微软从Spy Glass公司买下了技术。1995年，微软开发了 Internet Explorer。</p>
+<div style="text-align:center;">
 <img src="https://note.youdao.com/yws/api/personal/file/WEB69f21a1e1350de23b21a265b1e600d01?method=download&shareKey=e190bf0a28d646ae69b2a0d3dd4184bd" width="80%" height="80%">
+</div>
 <center>图 3 左一Mosic浏览器 &emsp;&emsp; 右一Navigator浏览器（图片来源于）</center>
 
 <p><a href>浏览器发展历史详情</a></p>
-<h3 id="4-CSS出现"><a href="#4-CSS出现" class="headerlink" title="4 CSS出现"></a>4 CSS出现</h3><p>随着万维网技术的应用越来越普及，不同的浏览器使用各自的HTML语法结构来支持实现不同的样式语言，HTML 增加了很多功能，代码也越来越臃肿，网页失去了语义化，维护代码很艰难。1994年，蒂姆·伯纳斯·李与哈坤·利提出了CSS的最初建议，与伯特·波斯（Bert Bos）一起合作设计CSS，由w3c组织进行编写，到1996年底，CSS初稿已经完成，1996年12月，层叠样式表的第一份正式标准（Cascading style Sheets Level 1）完成，成为w3c的推荐标准。</p>
+<h3><span id="4-css出现">4 CSS出现</span></h3><p>随着万维网技术的应用越来越普及，不同的浏览器使用各自的HTML语法结构来支持实现不同的样式语言，HTML 增加了很多功能，代码也越来越臃肿，网页失去了语义化，维护代码很艰难。1994年，蒂姆·伯纳斯·李与哈坤·利提出了CSS的最初建议，与伯特·波斯（Bert Bos）一起合作设计CSS，由w3c组织进行编写，到1996年底，CSS初稿已经完成，1996年12月，层叠样式表的第一份正式标准（Cascading style Sheets Level 1）完成，成为w3c的推荐标准。</p>
 <p><a href>CSS发展历史详情</a></p>
-<h3 id="5-动态加载页面技术"><a href="#5-动态加载页面技术" class="headerlink" title="5 动态加载页面技术"></a>5 动态加载页面技术</h3><h4 id="1-PHP技术"><a href="#1-PHP技术" class="headerlink" title="1 PHP技术"></a>1 PHP技术</h4><p>1994年，一个名叫拉斯马斯·勒德尔夫（Rasmus Lerdorf）的加拿大人为了维护个人网站而创建了超文本处理器PHP（Hypertext Preprocessor），原意是Personal Home Page，宣传语是Hypertext Preprocessor（超文本处理者），PHP是首个实现在服务器端将数据动态加载入HTML页面的技术，然后通过服务器返送合成好的静态页面到浏览器显示给用户浏览。<strong>这在当时是一件特别了不起的事情！</strong></p>
+<h3><span id="5-动态加载页面技术">5 动态加载页面技术</span></h3><h4><span id="1-php技术">1 PHP技术</span></h4><p>1994年，一个名叫拉斯马斯·勒德尔夫（Rasmus Lerdorf）的加拿大人为了维护个人网站而创建了超文本处理器PHP（Hypertext Preprocessor），原意是Personal Home Page，宣传语是Hypertext Preprocessor（超文本处理者），PHP是首个实现在服务器端将数据动态加载入HTML页面的技术，然后通过服务器返送合成好的静态页面到浏览器显示给用户浏览。<strong>这在当时是一件特别了不起的事情！</strong></p>
 <p><a href>PHP发展历史详情</a></p>
-<h4 id="2-ASP技术"><a href="#2-ASP技术" class="headerlink" title="2 ASP技术"></a>2 ASP技术</h4><p>ASP是Active Server Page的缩写，意为“活动服务器网页”。</p>
+<h4><span id="2-asp技术">2 ASP技术</span></h4><p>ASP是Active Server Page的缩写，意为“活动服务器网页”。</p>
 <p>ASP与ASPX以及ASP.net的区别</p>
 <p><a href>ASP发展历史详情</a></p>
-<h4 id="3-JSP技术"><a href="#3-JSP技术" class="headerlink" title="3 JSP技术"></a>3 JSP技术</h4><p>JSP（全称JavaServer Pages）是由Sun Microsystems公司主导创建的一种动态网页技术标准。JSP类似于PHP技术，通过在服务器端动态加载数据，组织形成新的HTML页面。</p>
+<h4><span id="3-jsp技术">3 JSP技术</span></h4><p>JSP（全称JavaServer Pages）是由Sun Microsystems公司主导创建的一种动态网页技术标准。JSP类似于PHP技术，通过在服务器端动态加载数据，组织形成新的HTML页面。</p>
 <p><a href>JSP发展历史详情</a></p>
 <p><em>所有这些服务器端的动态页面技术（PHP、ASP和JSP）使得网页可以获取服务器的数据信息并保持更新，推动了Google为代表的搜索引擎和各种论坛的出现，万维网开始快速发展。</em></p>
-<h2 id="动态交互时代"><a href="#动态交互时代" class="headerlink" title="动态交互时代"></a>动态交互时代</h2><h3 id="1-JavaScript现世"><a href="#1-JavaScript现世" class="headerlink" title="1 JavaScript现世"></a>1 JavaScript现世</h3><p>在网景公司发布完第一款Navigator浏览器大获成功后，面临一直急需解决的问题，就是用户通过浏览器只能实现查看功能，不能进行交互。客户填完所有的东西点击提交发送都需要等待后端去验证，用户体验在现在看来真的很差。网景公司需要尽快解决网页脚本问题，当时的选择有两条道路，第一条是利用现有的语言进行开发，另一条是重新开发一个全新的语言来实现网页的交互，这两条技术路线各有利弊，直到1995年Sun公司推出Java语言，提出“一次编写，到处运行”的理念，深深的影响了网景公司。随后，这两家公司开始深度合作，网景公司希望在即将发布Netscape Navigator 2上开发一种名为LiveScript的脚本语言，公司员工<strong>布兰登·艾奇（Brendan Eich）</strong>只用了10天时间设计出来该脚本语言。在发布日期前夕，网景公司为了赶上java的热度，某产品经理临时将LiveScript改名为JavaScript，从此JS开始野性生长，一发不可收拾，网页真正开始向动态交互发展。</p>
+<h2><span id="动态交互时代">动态交互时代</span></h2><h3><span id="1-javascript现世">1 JavaScript现世</span></h3><p>在网景公司发布完第一款Navigator浏览器大获成功后，面临一直急需解决的问题，就是用户通过浏览器只能实现查看功能，不能进行交互。客户填完所有的东西点击提交发送都需要等待后端去验证，用户体验在现在看来真的很差。网景公司需要尽快解决网页脚本问题，当时的选择有两条道路，第一条是利用现有的语言进行开发，另一条是重新开发一个全新的语言来实现网页的交互，这两条技术路线各有利弊，直到1995年Sun公司推出Java语言，提出“一次编写，到处运行”的理念，深深的影响了网景公司。随后，这两家公司开始深度合作，网景公司希望在即将发布Netscape Navigator 2上开发一种名为LiveScript的脚本语言，公司员工<strong>布兰登·艾奇（Brendan Eich）</strong>只用了10天时间设计出来该脚本语言。在发布日期前夕，网景公司为了赶上java的热度，某产品经理临时将LiveScript改名为JavaScript，从此JS开始野性生长，一发不可收拾，网页真正开始向动态交互发展。</p>
 <p><a href>JavaScript发展历史详情</a></p>
-<h3 id="2-第一次浏览器世界大战"><a href="#2-第一次浏览器世界大战" class="headerlink" title="2 第一次浏览器世界大战"></a>2 第一次浏览器世界大战</h3><p>随后微软也意识到了javascript的潜力，并模仿开发VBScript，但是VBScript一直代码风格太过于奇葩，一直没有受到关注，于是微软仿照Javascript重新开发了一套脚本语言JScript，并在1996年发布的IE3.0的版本上实现了自己的客户端语言JScript，这直接开启了NetScape和微软的浏览器竞争。</p>
+<h3><span id="2-第一次浏览器世界大战">2 第一次浏览器世界大战</span></h3><p>随后微软也意识到了javascript的潜力，并模仿开发VBScript，但是VBScript一直代码风格太过于奇葩，一直没有受到关注，于是微软仿照Javascript重新开发了一套脚本语言JScript，并在1996年发布的IE3.0的版本上实现了自己的客户端语言JScript，这直接开启了NetScape和微软的浏览器竞争。</p>
 <p>经过商业竞争的洗礼之后，市场上还残留三大JavaScript版本，Netscape Navigator中的JavaScript、IE中的JScript以及CEnvi中的ScriptEase。由于微软的IE集成在windows操作系统上的优势，NetScape的Navigator很快在浏览器市场上落于下风。为了防止陷入持续的非良性竞争之中，急需要建立起国际的JavaScript标准。</p>
-<h3 id="3-标准化之路"><a href="#3-标准化之路" class="headerlink" title="3 标准化之路"></a>3 标准化之路</h3><p>时间来到1997年，以网景公司发布的javascript1.1为蓝本的建议提交给了欧洲计算机制造商协会也就是ECMA。该协会指定39号技术委员会来负责此事，委员会里面的成员来自微软，网景，Sun，以及其他关注脚本语言发展的公司的程序员，他们经过数月的努力完成了ECMA-262  —定义一种名为ECMAScript的新脚本语言的标准。</p>
+<h3><span id="3-标准化之路">3 标准化之路</span></h3><p>时间来到1997年，以网景公司发布的javascript1.1为蓝本的建议提交给了欧洲计算机制造商协会也就是ECMA。该协会指定39号技术委员会来负责此事，委员会里面的成员来自微软，网景，Sun，以及其他关注脚本语言发展的公司的程序员，他们经过数月的努力完成了ECMA-262  —定义一种名为ECMAScript的新脚本语言的标准。</p>
 <p>但在此期间，网景公司发布了内置javascript1.2的Netscape Navigator 4 、微软发布了内置JScrpt3.0的IE4，并且都在大肆的宣扬自己的浏览器，微软宣称自己的是第一个兼容ECMA的，而网景公司则宣传ECMA在自己的发布的javascript1.1为蓝本的，现在在值得注意的是，当两家公司发布新的版本的时候，ECMAScript还未完成。所以很尴尬两家公司发布的js版本还是ECMAScript国际标准是不兼容，1998年ISO/IEC也采用了ECMAScript作为标准，从此以后浏览器开发商就开始致力于将ECMAScript作为各自JavaScript实现的基础与标准。</p>
 <p><a href>ECMAScript发展历史详情</a></p>
-<h3 id="4-Ajax开启新时代"><a href="#4-Ajax开启新时代" class="headerlink" title="4 Ajax开启新时代"></a>4 Ajax开启新时代</h3><p>服务器端网页动态交互功能的不断丰富，伴随的是后端逻辑的复杂度快速上升，代码越来越复杂。为了更好的管理后端逻辑，出现了大量<strong>后端的MVC框架</strong>。</p>
+<h3><span id="4-ajax开启新时代">4 Ajax开启新时代</span></h3><p>服务器端网页动态交互功能的不断丰富，伴随的是后端逻辑的复杂度快速上升，代码越来越复杂。为了更好的管理后端逻辑，出现了大量<strong>后端的MVC框架</strong>。</p>
 <p>在2004年前，动态页面都是由后端技术驱动的，虽然实现了动态交互和数据即时存取，但是每一次的数据交互都需要刷新一次浏览器。频繁的页面刷新非常影响用户的体验。Ajax技术诞生于1998年，但是直到谷歌在2004年应用Ajax技术开发的Gmail和谷歌地图的发布，通过Ajax技术中实现的异步HTTP请求，让页面无需刷新就可以发起HTTP请求，这一困扰多年的频繁刷新页面的问题才得到了解决。从此以后，用户可以不用等待请求的响应，继续浏览或操作网页了，Ajax开启了web2.0的时代。</p>
 <p><a href>Ajax发展历史详情</a></p>
-<h3 id="5-第二次浏览器世界大战"><a href="#5-第二次浏览器世界大战" class="headerlink" title="5 第二次浏览器世界大战"></a>5 第二次浏览器世界大战</h3><p>截止1998年，IE在使用方面已经取代了网景。要不是“开源”社区，事情到此就结束了。开源软件曾是微软之鞭，总裁史蒂夫·鲍尔默曾说Linux的开源操作系统是癌症。此类软件由软件开发者团队的人不断改善，他们这么做基本上是什么都不为。劳动果实通常都免费分发。1998年，网景将导航器的代码转换为名为 Mozilla的开源项目——火狐（Firefox）浏览器正是从此演变而来的。</p>
+<h3><span id="5-第二次浏览器世界大战">5 第二次浏览器世界大战</span></h3><p>截止1998年，IE在使用方面已经取代了网景。要不是“开源”社区，事情到此就结束了。开源软件曾是微软之鞭，总裁史蒂夫·鲍尔默曾说Linux的开源操作系统是癌症。此类软件由软件开发者团队的人不断改善，他们这么做基本上是什么都不为。劳动果实通常都免费分发。1998年，网景将导航器的代码转换为名为 Mozilla的开源项目——火狐（Firefox）浏览器正是从此演变而来的。</p>
 <p>火狐它是开源的，第三方开发者可以通过创建新应用程序扩展火狐的容量，让它更加强大，占了IE市场份额的20%，而且仍在增长。</p>
 <p>另外要提及的浏览器，1994年挪威国营电信公司里两个员工Tetzchner和GeirIvarsøy在一起创建了Opera浏览器。同时还有苹果的Safari浏览器。这些浏览器一起和IE开始了第二次浏览器战争。</p>
 <p>在2008年谷歌推出Chrome之前，浏览器市场成了IE和火狐二者之间的竞争。</p>
-<h3 id="6-jQuery前端兼容性框架"><a href="#6-jQuery前端兼容性框架" class="headerlink" title="6 jQuery前端兼容性框架"></a>6 jQuery前端兼容性框架</h3><p>在第二次浏览器世界大战中，这些不同的浏览器在技术标准有不小不同的差异，不利于兼容开发。于是Dojo、Mooltools、YUIExtJS、jQuery等前端兼容框架开始涌现，其中<strong>jQuery</strong>应用最为广泛。</p>
-<h3 id="7-HTML5出现"><a href="#7-HTML5出现" class="headerlink" title="7 HTML5出现"></a>7 HTML5出现</h3><p>在2004年6月，Mozilla和Opera共同提议W3C扩展HTML和DOM的Web Forms 2.0草案被否决后，一些浏览器厂商便成立了网页超文本应用技术工作小组（WHATWG），提出了Web Applications 1.0规范草案。2007年，W3C接纳了HTML5草案规范，并成立了新的HTML工作团队，并于<strong>2008年1月22日发布了HTML5</strong>。</p>
+<h3><span id="6-jquery前端兼容性框架">6 jQuery前端兼容性框架</span></h3><p>在第二次浏览器世界大战中，这些不同的浏览器在技术标准有不小不同的差异，不利于兼容开发。于是Dojo、Mooltools、YUIExtJS、jQuery等前端兼容框架开始涌现，其中<strong>jQuery</strong>应用最为广泛。</p>
+<h3><span id="7-html5出现">7 HTML5出现</span></h3><p>在2004年6月，Mozilla和Opera共同提议W3C扩展HTML和DOM的Web Forms 2.0草案被否决后，一些浏览器厂商便成立了网页超文本应用技术工作小组（WHATWG），提出了Web Applications 1.0规范草案。2007年，W3C接纳了HTML5草案规范，并成立了新的HTML工作团队，并于<strong>2008年1月22日发布了HTML5</strong>。</p>
 <p>由于HTML5能解决实际的问题，所以在规范还未定稿的情况下，各大浏览器厂家已经开始对旗下产品进行升级以支持HTML5的新功能，第二次浏览器世界大战走向了良性竞争。因此，HTML5得益于浏览器的实验性反馈并且也得到持续的完善，并以这种方式迅速融入对Web平台的实质性改进中。2014年10月28日，W3C组织宣布历经8年努力，<strong>HTML5标准规范终于定稿</strong>。</p>
-<h3 id="8-V8引擎"><a href="#8-V8引擎" class="headerlink" title="8 V8引擎"></a>8 V8引擎</h3><p>在浏览器走入良性竞争的时代，浏览器已经无法处理日益复杂的网络应用。就好比是很多高性能的跑车跑在辙颠簸不平的路上一样。但是没有哪家跑车制造商会出钱修路，毕竟自己修路对手也会沾光，更不要提高昂的费用。软件开发的成本不高，但依然存在竞争问题。不过谷歌说它不在乎，它说：没有好的浏览器，大家伙儿都会遭殃。</p>
+<h3><span id="8-v8引擎">8 V8引擎</span></h3><p>在浏览器走入良性竞争的时代，浏览器已经无法处理日益复杂的网络应用。就好比是很多高性能的跑车跑在辙颠簸不平的路上一样。但是没有哪家跑车制造商会出钱修路，毕竟自己修路对手也会沾光，更不要提高昂的费用。软件开发的成本不高，但依然存在竞争问题。不过谷歌说它不在乎，它说：没有好的浏览器，大家伙儿都会遭殃。</p>
 <p>2006年秋天的一天，Google聘请拉斯·巴克（Lars Bak）为 Chrome 浏览器构建了一个新的 JavaScript引擎，当时它仍然是一个Google内部秘密的项目。Google之所以要秘密研究这个项目，不在浏览器本身，而在于它能访问的内容：也就是网络应用程序。网页浏览器都不赚钱，无论是IE、Safari、还是Firefox和Opera。当时Google对旗下的Google文档比较看重，这个产品和微软的当代企业工具桌面版Office程序类似，为了更好地体验获得这些程序和其他在线应用，用户需要更好的浏览器，以便更好地运行相关代码。</p>
 <p>后来，Lars为了让女儿们上丹麦语学校，选择留在丹麦，他从硅谷搬回了丹麦的奥尔胡斯（Aarhus）。奥尔胡斯是丹麦第二大城市，也是日德兰半岛（Jutland）的非正式首府。在该市郊外5英里的地方，有一座改造过的农舍。里面有宽敞的木地板和拱形的顶（曾经是马厩的一部分），在距离DVD播放机不远的地方摆着一个大的棕色皮沙发。从外面看，这座房子看上去仍略显陈旧：粗糙的石子路，凹陷得小窗；但正是这里孕育了互联网未来的关键部分。这里没有谷歌办公室，Lars和该项目最早的几个工程师就是在这农场里开始了他们的工作。</p>
 <p>新的 JavaScript引擎被命名为“V8”，隐喻肌肉车（肌肉车一词出现于上世纪八九十年代，特别用于称呼活跃于上世纪六七十年代的一类搭载大排量V8发动机、具有强劲马力、外形富有肌肉感的美式后驱车）里的强大引擎[注：肌肉车装备有大马力V8发动机]。随着V8团队壮大，开发人员从他们的农场搬到了奥尔胡斯的现代化办公大楼，团队带着他们特有的驱动力，专注于构建地球上最快的JavaScript引擎。</p>
+<div style="text-align:center;">
 <img src="https://note.youdao.com/yws/api/personal/file/WEBb03647a1d30464e403cd70982e046f60?method=download&shareKey=8de01e0ea2b336ebccf09a8a72fc26b6" width="80%" height="80%">
+</div>
 <center>图 4 肌肉车V8引擎（图片来源于）</center>
 
 <p>巴克和他的团队开始工作，在现在是家庭影院的地方建立了办公室。农舍是围绕院子修的，家就在办公室对面。每天，他走过石子路到办公室，然后开始写代码。每天结束时，他又穿过院子，走回家，把工作彻底放下。在这些行走之间，他投入到浏览器开发中，有了这种浏览器，其他人就有更多机会做他所做的事。</p>
-<h3 id="6-Node-js"><a href="#6-Node-js" class="headerlink" title="6 Node.js"></a>6 Node.js</h3><p>话说有个叫Ryan Dahl的歪果仁，他的工作是用C/C++写高性能Web服务。对于高性能，异步IO、事件驱动是基本原则，但是用C/C++写就太痛苦了。于是这位仁兄开始设想用高级语言开发Web服务。他评估了很多种高级语言，发现很多语言虽然同时提供了同步IO和异步IO，但是开发人员一旦用了同步IO，他们就再也懒得写异步IO了，所以，最终，Ryan瞄向了JavaScript。</p>
+<h3><span id="6-nodejs">6 Node.js</span></h3><p>话说有个叫Ryan Dahl的歪果仁，他的工作是用C/C++写高性能Web服务。对于高性能，异步IO、事件驱动是基本原则，但是用C/C++写就太痛苦了。于是这位仁兄开始设想用高级语言开发Web服务。他评估了很多种高级语言，发现很多语言虽然同时提供了同步IO和异步IO，但是开发人员一旦用了同步IO，他们就再也懒得写异步IO了，所以，最终，Ryan瞄向了JavaScript。</p>
 <p>因为JavaScript是单线程执行，根本不能进行同步IO操作，所以，JavaScript的这一“缺陷”导致了它只能使用异步IO。</p>
 <p>选定了开发语言，还要有运行时引擎。这位仁兄曾考虑过自己写一个，不过明智地放弃了，因为V8就是开源的JavaScript引擎。让Google投资去优化V8，咱只负责改造一下拿来用，还不用付钱，这个买卖很划算。</p>
 <p>于是在2009年，Ryan正式推出了基于JavaScript语言和V8引擎的开源Web服务器项目，命名为Node.js。虽然名字很土，但是，Node第一次把JavaScript带入到后端服务器开发，加上世界上已经有无数的JavaScript开发人员，所以Node一下子就火了起来。接着，大量的Node.js使用者就建构了一个用NPM包管理工具管理的Node.js生态系统。</p>
-<h3 id="7-前端MV-框架"><a href="#7-前端MV-框架" class="headerlink" title="7 前端MV*框架"></a>7 前端MV*框架</h3><p>随着各大浏览器对HTML5和V8引擎的不断支持，前端能够实现的交互功能越多，相应的代码复杂度也快速提高，以前用于后端的MV*框架也开始出现在前端部分。</p>
+<h3><span id="7-前端mv框架">7 前端MV*框架</span></h3><p>随着各大浏览器对HTML5和V8引擎的不断支持，前端能够实现的交互功能越多，相应的代码复杂度也快速提高，以前用于后端的MV*框架也开始出现在前端部分。</p>
 <p>2010年10月,Backbone发布，Backbone奠定了现代前端框架的基石。从此以后衍生除了各种前端框架Knockout、Anjular、Ember、Meteor、React和Vue等。</p>
+<div style="text-align:center;">
 <img src="https://note.youdao.com/yws/api/personal/file/WEB10798d27e20d55bc45a715b8fdfed422?method=download&shareKey=890fd7c2f7b49eb15eb1ccf4fedbf817" width="50%" height="50%">
+</div>
 <center>图 4 前端框架基石（图片来源于）</center>
 
 <p><a href>前端框架发展历史详情</a></p>
-<h3 id="8-SPA时代"><a href="#8-SPA时代" class="headerlink" title="8 SPA时代"></a>8 SPA时代</h3><p>各种前端框架的发展和运用，使得网站从Web Site进化成了Web App，这种Web App开启了网站应用的单页应用SPA（Single Page Application）的时代。</p>
+<h3><span id="8-spa时代">8 SPA时代</span></h3><p>各种前端框架的发展和运用，使得网站从Web Site进化成了Web App，这种Web App开启了网站应用的单页应用SPA（Single Page Application）的时代。</p>
 <p>说起单页应用首先要介绍多页应用。每一次页面跳转的时候，后台服务器都会给返回一个新的html文档，这种类型的网站也就是多页网站，也叫做多页应用。正是因为每次跳转都需要发出一个http请求，如果网络比较慢，在页面之间来回跳转时，就会发现明显的卡顿，这是多页应用最大的缺陷。</p>
 <p>假设一个场景，当我们第一次进入页面的时候会请求一个html文件，刷新清除一下。切换到其他组件，此时路径也相应变化，但是并没有新的html文件请求，页面内容也变化了。随着JavaScript技术的突破，这种假设场景开始成为了现实。JavaScript可以感知到url的变化，通过这一点，可以用js动态的将当前页面的内容清除掉，然后将下一个页面的内容挂载到当前页面上，这个时候的路由不是后端来做了，而是前端来做，判断页面到底是显示哪个组件，清除不需要的，显示需要的组件。这种过程就是单页应用，每次跳转的时候不需要再请求html文件了。</p>
-<h2 id="移动前端时代"><a href="#移动前端时代" class="headerlink" title="移动前端时代"></a>移动前端时代</h2><h3 id="1-移动Web"><a href="#1-移动Web" class="headerlink" title="1 移动Web"></a>1 移动Web</h3><p>随着智能手机的发展，移动端成了重要的信息和流量端口，为了满足不同移动端浏览器的兼容需求，发展出了jQuery Mobile、Sencha Touch、Framework7等框架。</p>
-<h3 id="2-Hybrid-App技术"><a href="#2-Hybrid-App技术" class="headerlink" title="2 Hybrid App技术"></a>2 Hybrid App技术</h3><p>为了加快移动App的开发速度，利用Web开发技术变成了一种刚需。调用Native相关的API，实现移动与Web二者的有机结合，既能利用Web开发周期短的优势，又能为用户提供Native的体验，这种新的开发技术被称为Hybrid App技术。</p>
-<h2 id="全能前端系统"><a href="#全能前端系统" class="headerlink" title="全能前端系统"></a>全能前端系统</h2><p>现代前端技术已经形成了一个庞大的技术系统，以Github为代表的代码管理仓库；NPM和Yarn为代表的包管理工具；ES6及Babel和TypeScript构成的脚本体系；HTML5；CSS3和相应的处理技术；React、Vue、Anjular为代表的框架；Webpack为代表的打包工具；Node.js为基础的Express和KOA后端框架；Hybrid技术。</p>
+<h2><span id="移动前端时代">移动前端时代</span></h2><h3><span id="1-移动web">1 移动Web</span></h3><p>随着智能手机的发展，移动端成了重要的信息和流量端口，为了满足不同移动端浏览器的兼容需求，发展出了jQuery Mobile、Sencha Touch、Framework7等框架。</p>
+<h3><span id="2-hybrid-app技术">2 Hybrid App技术</span></h3><p>为了加快移动App的开发速度，利用Web开发技术变成了一种刚需。调用Native相关的API，实现移动与Web二者的有机结合，既能利用Web开发周期短的优势，又能为用户提供Native的体验，这种新的开发技术被称为Hybrid App技术。</p>
+<h2><span id="全能前端系统">全能前端系统</span></h2><p>现代前端技术已经形成了一个庞大的技术系统，以Github为代表的代码管理仓库；NPM和Yarn为代表的包管理工具；ES6及Babel和TypeScript构成的脚本体系；HTML5；CSS3和相应的处理技术；React、Vue、Anjular为代表的框架；Webpack为代表的打包工具；Node.js为基础的Express和KOA后端框架；Hybrid技术。</p>
 
         </section>
     </article>
@@ -198,7 +248,7 @@
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© Copyright 2019</span>
+        <span>© Copyright 2019</a></span>
     </div>
 </footer>
 

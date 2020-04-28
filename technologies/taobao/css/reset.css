@@ -1,0 +1,76 @@
+body, p, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    border: none; /* 在IE浏览器中默认会有边框 */
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+input, button { 
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none; /* 去除输入框的焦点聚焦显示蓝色边框样式 */
+}
+
+body {
+    font: 12/1.5, tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    /* font-family: '宋体';
+    font-family: '\5b8b\4f53';
+    font-family: 'SimSun'; 
+
+    font-family: '微软雅黑';
+    font-family: Microsoft YaHei;*/
+
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.leayer { /* 用来处理两边的留白*/
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.c4 {
+    color: #f40;
+}
+
+.c5 {
+    color: #f50;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
