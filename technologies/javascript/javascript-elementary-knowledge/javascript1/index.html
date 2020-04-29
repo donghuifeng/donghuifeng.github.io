@@ -45,16 +45,20 @@
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Blog</a></div>
+            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Website</a></div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
                 
-                    <a class="menu-item" href="/programs">Programs</a>
-                
                     <a class="menu-item" href="/researches">Researches</a>
                 
+                    <a class="menu-item" href="/articles">Articles</a>
+                
                     <a class="menu-item" href="/technologies">Technologies</a>
+                
+                    <a class="menu-item" href="/programs">Programs</a>
+                
+                    <a class="menu-item" href="/histories">Histories</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -70,7 +74,7 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">Donghuifeng&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">Donghuifeng&#39;s Website</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
@@ -78,11 +82,15 @@
                 
                     <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
                 
-                    <a class="menu-item" href="/programs">Programs</a>
-                
                     <a class="menu-item" href="/researches">Researches</a>
                 
+                    <a class="menu-item" href="/articles">Articles</a>
+                
                     <a class="menu-item" href="/technologies">Technologies</a>
+                
+                    <a class="menu-item" href="/programs">Programs</a>
+                
+                    <a class="menu-item" href="/histories">Histories</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -111,7 +119,7 @@
         <h2 class="post-title">Technologies</h2>
         
         <section class="post-content">
-            <!-- toc -->
+            <h2><span id="javascript基础知识一">JavaScript基础知识一</span></h2><!-- toc -->
 
 <ul>
 <li><a href="#引导">引导</a><ul>
@@ -124,7 +132,18 @@
 </li>
 <li><a href="#开始学js">开始学JS</a><ul>
 <li><a href="#如何引入js">如何引入js？</a></li>
-<li><a href="#js基本语法">js基本语法</a></li>
+<li><a href="#js基本语法">js基本语法</a><ul>
+<li><a href="#变量">变量</a></li>
+<li><a href="#值类型">值类型</a></li>
+<li><a href="#运算符">运算符</a><ul>
+<li><a href="#算术运算符">算术运算符</a></li>
+<li><a href="#比较运算符">比较运算符</a></li>
+<li><a href="#逻辑运算符">逻辑运算符</a></li>
+<li><a href="#被指定为false的值">被指定为false的值</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,7 +190,7 @@
 <p>错误不会影响下面的错误。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="number">10</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(c);</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> b = <span class="number">20</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(b); <span class="comment">//上面输出c出现错误，但是不会影响b的输出</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4><span id="运算符">运算符</span></h4><p>加号</p>
+<h4><span id="运算符">运算符</span></h4><h5><span id="算术运算符">算术运算符</span></h5><p>加号</p>
 <p>加号的功能有两个，分别是数学运算和字符串连接；<strong>任何数据类型加字符串都等于字符串</strong>。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">2</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(a);</span></span><br><span class="line">  </span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="string">"a"</span> + <span class="number">1</span> + <span class="number">1</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(a);</span></span><br><span class="line">  </span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="string">"a"</span> + (<span class="number">1</span> + <span class="number">1</span>);</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(a);</span></span><br><span class="line">  </span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="number">0</span> / <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(a); <span class="comment">//结果是NaN, NOT A Number的意思</span></span></span><br><span class="line">  </span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="number">1</span> / <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(a); <span class="comment">//Infinity, 无穷</span></span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="number">-1</span> / <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(a); <span class="comment">//-Infinity, 负无穷</span></span></span><br><span class="line">  </span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = <span class="number">10</span>;</span></span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> b = ++a - <span class="number">1</span> + a++; <span class="comment">// 11 - 1 + 11</span></span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.write(b + <span class="string">""</span> + a); <span class="comment">//输出21 12</span></span></span><br><span class="line">  </span><br><span class="line"><span class="actionscript">  <span class="keyword">var</span> a = b = <span class="number">10</span>; <span class="comment">//赋值的顺序，自右向左；计算的顺序，自左向右；</span></span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 

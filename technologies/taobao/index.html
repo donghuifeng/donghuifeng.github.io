@@ -8,7 +8,7 @@
 
 
 
-<title>Donghuifeng</title>
+<title>Technologies | Donghuifeng</title>
 
 
 
@@ -39,22 +39,26 @@
     
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 <body>
     <div class="wrapper">
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Blog</a></div>
+            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Website</a></div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
                 
-                    <a class="menu-item" href="/programs">Programs</a>
-                
                     <a class="menu-item" href="/researches">Researches</a>
                 
+                    <a class="menu-item" href="/articles">Articles</a>
+                
                     <a class="menu-item" href="/technologies">Technologies</a>
+                
+                    <a class="menu-item" href="/programs">Programs</a>
+                
+                    <a class="menu-item" href="/histories">Histories</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -70,7 +74,7 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">Donghuifeng&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">Donghuifeng&#39;s Website</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
@@ -78,11 +82,15 @@
                 
                     <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
                 
-                    <a class="menu-item" href="/programs">Programs</a>
-                
                     <a class="menu-item" href="/researches">Researches</a>
                 
+                    <a class="menu-item" href="/articles">Articles</a>
+                
                     <a class="menu-item" href="/technologies">Technologies</a>
+                
+                    <a class="menu-item" href="/programs">Programs</a>
+                
+                    <a class="menu-item" href="/histories">Histories</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -108,37 +116,18 @@
             <div class="container">
     <article class="post-wrap page">
         
-        <h2 class="post-title"></h2>
+        <h2 class="post-title">Technologies</h2>
         
         <section class="post-content">
-            <!DOCTYPE html>
-<html>
-    <head><meta name="generator" content="Hexo 3.9.0">
-        <meta charset="UTF-8">
-		<title>淘宝网，淘！我喜欢</title>
-		<link rel="stylesheet" href="css/index.css">
-		<link rel="icon" href="favicon.ico"><!-- IE不支持非HTTP协议打开的方式-->
-		<base target="_blank"><!-- 只能出现一个标签-->
-    </head>
-    <body>
-		<!-- 头部信息 --> 
-		<div id="headMessage">
+            <p>01 项目文件结构<br>reset是用来进行样式重置的</p>
+<p>02 划分结构和层<br>首先说的是划分结构的顺序是自上向下，自左向右，以行作一个单位，尽量保持在一个行当中；<br>划分结构的时候要考虑内容、颜色块、间距、边框</p>
+<p>03 开始先写大块<br>这个时候选择ID选择器还是class选择器，完全根据自己的选择；</p>
+<p>04 样式重置与样式模块化<br>样式重置是把一些对我们用到的标签里没有用的样式进行重置；重置的时候对于标签没有的样式不进行重置。<br>重置过程中如何知道一个标签是否有某些样式，直接在控制台中查看计算后的样式结果，然后选择是否需要重置；</p>
+<p>body<br>身上的行高解释<br>行高一般有5种写法，其中normal的是默认的，其大小由两个因素来决定，一个是浏览器，一个是字体（最重要的），比如微软雅黑的字体在不同浏览器中的行高为1.32，宋体为1.41，这样就有了差距，所以在做项目的时候就需要重置行高；<br>选择哪种行高表示形式？<br>一般行高像素的计算是拿font-size的大小和行高进行相乘；我们在实际中选择用数字来表示行高，因为这样子元素都会去继承这样的行高值，然后拿着自己的字体大小去相乘得出行高像素大小，但是如果不选择数字来表示行高的话，则会用父元素的行高值乘以父元素的恶字体大小来作为子元素的行高像素。</p>
+<p>还需要预定义一些class</p>
+<p>样式模块化，需要用到艾特规则</p>
+<p>05 自定义图标</p>
 
-		</div>
-		<!-- 头部广告 -->
-		<div id="headAd">
-
-		</div>
-		<!-- 头部搜索 -->
-		<div id="headSearch">
-
-		</div>
-		<!-- 首屏内容 -->
-		<div id="firstScreen">
-			
-		</div>
-    </body>
-</html>
         </section>
     </article>
 </div>
