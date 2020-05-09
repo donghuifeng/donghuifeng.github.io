@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+<title>Programs | Donghuifeng</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Website</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
+                
+                    <a class="menu-item" href="/researches">Researches</a>
+                
+                    <a class="menu-item" href="/articles">Articles</a>
+                
+                    <a class="menu-item" href="/technologies">Technologies</a>
+                
+                    <a class="menu-item" href="/programs">Programs</a>
+                
+                    <a class="menu-item" href="/histories">Histories</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Donghuifeng&#39;s Website</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
+                
+                    <a class="menu-item" href="/researches">Researches</a>
+                
+                    <a class="menu-item" href="/articles">Articles</a>
+                
+                    <a class="menu-item" href="/technologies">Technologies</a>
+                
+                    <a class="menu-item" href="/programs">Programs</a>
+                
+                    <a class="menu-item" href="/histories">Histories</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">Programs</h2>
+        
+        <section class="post-content">
+            <h2><span id="仿猫眼电影">仿猫眼电影</span></h2><!-- toc -->
+
+<ul>
+<li><a href="#项目结构">项目结构</a></li>
+<li><a href="#项目展示">项目展示</a></li>
+<li><a href="#项目技术表">项目技术表</a><ul>
+<li><a href="#项目开发环境">项目开发环境</a></li>
+<li><a href="#项目技术点">项目技术点</a></li>
+</ul>
+</li>
+<li><a href="#个人部分">个人部分</a></li>
+<li><a href="#项目源代码及分析">项目源代码及分析</a><ul>
+<li><a href="#项目源代码">项目源代码</a></li>
+<li><a href="#项目源代码分析">项目源代码分析</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<blockquote>
+<p>项目是校级电影院项目一个部分，完成学校播放电影管理。使用的前端框架是Vue，后端框架使用的是基于node.js的Express，数据库是MongoDB。本人负责完成前端页面的静态设计以及Vue框架重构前端页面。最终，完成校级电影院项目。</p>
+</blockquote>
+<h2><span id="项目结构">项目结构</span></h2><p>项目主要采用网页实现移动前端的显示功能，其包含三大主要模块，分别是电影、影院和我的。电影模块，主要分成首页、导航栏（城市选择、正在热映、即将上映和影片搜索）、导航栏内容详情和底部导航；影院模块，主要分成首页、导航栏（区域选择、品牌和特色）、影院列表；我的模块，主要分成登录、注册和找回密码。其中区域选择、品牌和特色、登录注册和找回密码没有做！</p>
+ <div style="text-align:center;">
+    <img src="https://note.youdao.com/yws/api/personal/file/WEB37065c8fb9c3733eb377bf88b2345ec0?method=download&shareKey=44b86c944ce8e004df871cbf9e501c05" width="70%"> 
+ </div>
+
+
+<h2><span id="项目展示">项目展示</span></h2><p>移动端前端的第一部分——电影，从左到右如下图所示，分别是城市选择、正在热映、即将上映和搜索</p>
+ <div style="text-align:left;">
+   <img src="https://note.youdao.com/yws/api/personal/file/WEBea76b2f7f3aae0236d94e3d4ff201ad7?method=download&shareKey=a71008020b1d527631eb5fd707160232" width="24%"> 
+
+   <img src="https://note.youdao.com/yws/api/personal/file/WEB6b809eb09aea25bd87bd67a713eb9fd8?method=download&shareKey=2767256b019b15a19da519fe6fc407d4" width="24%"> 
+
+   <img src="https://note.youdao.com/yws/api/personal/file/WEBd6537b53f84a030e24d6cc3ffb21c884?method=download&shareKey=c02b02e2843ce60cb73a349b87899f97" width="24%">
+
+   <img src="https://note.youdao.com/yws/api/personal/file/WEBb24a63cc505e90e5ecd96e7739c0a42c?method=download&shareKey=fcae9c790bf659aa8ed00f3849a01e22" width="24%">
+ </div>
+
+<p>接下来，影片详情页属于正在热映中的影片列表，可点击每一项查看；影院模块和我的模块，效果如下右边两图显示；</p>
+  <div style="text-align:left;">
+   <img src="https://note.youdao.com/yws/api/personal/file/WEB24e5869ed02bd943745f733b19c451a4?method=download&shareKey=37c38c129b831d4d4d15f0b851dbec69" width="24%"> 
+
+   <img src="https://note.youdao.com/yws/api/personal/file/WEB3ad10fef3741d0c9ec0e3fd4a2044e72?method=download&shareKey=d46e7008aa976d76dcc0970efdaca505" width="24%"> 
+
+   <img src="https://note.youdao.com/yws/api/personal/file/WEB53ea515b059ed246299afd252d2009ed?method=download&shareKey=c5e5931ce3d9e54f6609674d480bc2af" width="24%">
+ </div>
+
+
+
+<h2><span id="项目技术表">项目技术表</span></h2><h3><span id="项目开发环境">项目开发环境</span></h3><table>
+<thead>
+<tr>
+<th align="center">开发环境</th>
+<th align="center">开发环境详情</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">编辑器</td>
+<td align="center">VSCode</td>
+</tr>
+<tr>
+<td align="center">编辑器插件</td>
+<td align="center">Vetur 0.24.0</td>
+</tr>
+<tr>
+<td align="center">操作系统</td>
+<td align="center">MAC OS Catalina 10.15.3</td>
+</tr>
+<tr>
+<td align="center">Node环境</td>
+<td align="center">Node 10.16.0  Npm 6.9.0</td>
+</tr>
+<tr>
+<td align="center">前端框架</td>
+<td align="center">Vue 4.3.1</td>
+</tr>
+<tr>
+<td align="center">Vue脚手架</td>
+<td align="center">Vue-cli 4.3.1</td>
+</tr>
+<tr>
+<td align="center">后端框架</td>
+<td align="center">Express</td>
+</tr>
+<tr>
+<td align="center">数据库</td>
+<td align="center">MongoDB</td>
+</tr>
+</tbody></table>
+<h3><span id="项目技术点">项目技术点</span></h3><style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 70%;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th align="center">技术点</th>
+<th align="center">技术点详情</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">构建组件</td>
+<td align="center">新建Vue文件，将页面的公有部分和个性化部分分别抽取出来设置为单独的vue组件</td>
+</tr>
+<tr>
+<td align="center">路由配置</td>
+<td align="center">绑定相应页面的一级路由</td>
+</tr>
+<tr>
+<td align="center">路由重定向</td>
+<td align="center">实现页面一级路由的重定向</td>
+</tr>
+<tr>
+<td align="center">子页面缓存</td>
+<td align="center">导航栏每个栏目下内容的缓存设置</td>
+</tr>
+<tr>
+<td align="center">二级路由</td>
+<td align="center">在一级路由绑定的相应页面基础上实现绑定子页面</td>
+</tr>
+<tr>
+<td align="center">页面跳转</td>
+<td align="center">点击页面上的功能模块，实现跳转功能</td>
+</tr>
+</tbody></table>
+<h2><span id="个人部分">个人部分</span></h2><p>项目中，个人主要涉及的内容有，前端静态页面的绘制和Vue框架重构前端页面。</p>
+<h2><span id="项目源代码及分析">项目源代码及分析</span></h2><h3><span id="项目源代码">项目源代码</span></h3><p><a href="https://github.com/donghuifeng/refermaoyan" target="_blank" rel="noopener">[Github地址]</a> <a href="https://github.com/donghuifeng/refermaoyan" target="_blank" rel="noopener">[代码下载]</a></p>
+<h3><span id="项目源代码分析">项目源代码分析</span></h3><p><a href="/programs/refermaoyan/technology-details/part1/">[项目构建过程]</a></p>
+
+        </section>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Copyright 2019</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
