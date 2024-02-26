@@ -45,20 +45,16 @@
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Website</a></div>
+            <div class="navbar-header header-logo"><a href="/">Donghuifeng&#39;s Blog</a></div>
             <div class="menu navbar-right">
                 
-                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
+                    <a class="menu-item" href="/products">Products</a>
+                
+                    <a class="menu-item" href="/ai">AI</a>
                 
                     <a class="menu-item" href="/researches">Researches</a>
                 
-                    <a class="menu-item" href="/articles">Articles</a>
-                
                     <a class="menu-item" href="/technologies">Technologies</a>
-                
-                    <a class="menu-item" href="/programs">Programs</a>
-                
-                    <a class="menu-item" href="/histories">Histories</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -74,23 +70,19 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">Donghuifeng&#39;s Website</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">Donghuifeng&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
             <div class="menu" id="mobile-menu">
                 
-                    <a class="menu-item" href="https://blog.csdn.net/dong_huifeng" target="_blank" rel="noopener">Blog</a>
+                    <a class="menu-item" href="/products">Products</a>
+                
+                    <a class="menu-item" href="/ai">AI</a>
                 
                     <a class="menu-item" href="/researches">Researches</a>
                 
-                    <a class="menu-item" href="/articles">Articles</a>
-                
                     <a class="menu-item" href="/technologies">Technologies</a>
-                
-                    <a class="menu-item" href="/programs">Programs</a>
-                
-                    <a class="menu-item" href="/histories">Histories</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -380,9 +372,11 @@
 
 <p>arguments.callee</p>
 <p>func.caller</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee);</span><br><span class="line">&#125;</span><br><span class="line">test(); <span class="comment">// 输出的是test函数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = (<span class="function"><span class="keyword">function</span> (<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(n == <span class="number">1</span>)&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> n * <span class="built_in">arguments</span>.callee(n<span class="number">-1</span>);</span><br><span class="line">&#125;(<span class="number">100</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">demo</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee;</span><br><span class="line">  &#125;</span><br><span class="line">  demo();</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  demo();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(demo.caller);</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee);</span><br><span class="line">&#125;</span><br><span class="line">test(); <span class="comment">// 输出的是test函数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = (<span class="function"><span class="keyword">function</span> (<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(n == <span class="number">1</span>)&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> n * <span class="built_in">arguments</span>.callee(n<span class="number">-1</span>);</span><br><span class="line">&#125;(<span class="number">100</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">demo</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>.callee;</span><br><span class="line">  &#125;</span><br><span class="line">  demo();</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br></pre></td></tr></table></figure>
 
 
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  demo();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(demo.caller);</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">"use strict"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  demo();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">demo</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(demo.caller);</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br></pre></td></tr></table></figure>
 
 <p>字符串是通过栈存储的</p>
 <p>数组是用散列存储的</p>
