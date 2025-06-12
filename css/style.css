@@ -747,7 +747,6 @@ header label {
 }
 .post-content h1::before {
   content: "";
-  margin-right: 5px;
   color: #2d96bd;
 }
 .dark-theme .post-content h1::before {
@@ -755,7 +754,6 @@ header label {
 }
 .post-content h2::before {
   content: "";
-  margin-right: 5px;
   color: #2d96bd;
 }
 .dark-theme .post-content h2::before {
@@ -763,7 +761,6 @@ header label {
 }
 .post-content h3::before {
   content: "";
-  margin-right: 5px;
   color: #2d96bd;
 }
 .dark-theme .post-content h3::before {
@@ -771,7 +768,6 @@ header label {
 }
 .post-content h4::before {
   content: "";
-  margin-right: 5px;
   color: #2d96bd;
 }
 .dark-theme .post-content h4::before {
